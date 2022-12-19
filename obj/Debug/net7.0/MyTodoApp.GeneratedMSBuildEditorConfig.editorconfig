@@ -9,65 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyTodoApp
 build_property.RootNamespace = MyTodoApp
-build_property.ProjectDir = C:\Dev\MyTodoApp\
+build_property.ProjectDir = C:\Users\mozart.gomes\CrudC-\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Dev\MyTodoApp
+build_property.MSBuildProjectDirectory = C:\Users\mozart.gomes\CrudC-
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Dev/MyTodoApp/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Home/Index.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Home/Privacy.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Shared/Error.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Todo/Create.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Todo/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Todo/Delete.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Todo/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Todo/Details.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Todo/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Todo/Edit.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Todo/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Todo/Index.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Todo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/_ViewImports.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/_ViewStart.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/MyTodoApp/Views/Shared/_Layout.cshtml]
+[C:/Users/mozart.gomes/CrudC-/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-auvzq10hpx

@@ -12,6 +12,8 @@ namespace MyTodoApp.Models
         public int Id { get; set; }
 
 
+        
+
         [DisplayName("Titulo")]
         [Required(ErrorMessage = "Campo obrigatorio")]
         public string Title { get; set; }
@@ -23,7 +25,7 @@ namespace MyTodoApp.Models
         public DateTime CreatAt { get; set; } = DateTime.Now;
 
         [DisplayName("Ultima Atualização")]
-        public DateTime LastUpdateDate { get; set; } = DateTime.Now;
+        public DateTime LastUpdateDate {get;  set; } = DateTime.Now;
 
         [DisplayName("Usuario")]
         public string User { get; set; }
