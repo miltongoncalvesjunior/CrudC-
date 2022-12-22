@@ -2,15 +2,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MyTodoApp.Data;
 using MyTodoApp.Models;
-using Microsoft.EntityFrameworkCore;
+
 
 namespace MyTodoApp.Controllers
 {
     [Authorize]
-
-
     public class TodoController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -21,13 +20,16 @@ namespace MyTodoApp.Controllers
         }
 
         //GET: Todo
-       
-        
+
         public async Task<IActionResult> Index()
         {
-              return _context.Todos != null ? 
-                          View(await _context.Todos.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Todos'  is null.");
+            return View(await _context.Todos
+            .AsNoTracking()
+
+            .Where(x=>x.User == User.Identity.Name)    
+            
+            .ToListAsync()) ;
+                       
         }
 
 
@@ -49,7 +51,7 @@ namespace MyTodoApp.Controllers
             if (todo.User != User.Identity.Name)
             {
                 return NotFound();
-            } 
+            }
 
             return View(todo);
         }
@@ -67,17 +69,17 @@ namespace MyTodoApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Done")] Todo todo)
+        public async Task<IActionResult> Create([Bind("Id,Title,Done, CreatdAt, LastUpdate,User")] Todo todo)
         {
-             
+
             if (ModelState.IsValid)
             {
-                    todo.User = User.Identity.Name;
-                    _context.Add(todo);
-                    
-                    await _context.SaveChangesAsync();
-                   return RedirectToAction(nameof(Index));               
-            }       
+                todo.User = User.Identity.Name;
+                _context.Add(todo);
+
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
 
             return View(todo);
         }
@@ -91,6 +93,7 @@ namespace MyTodoApp.Controllers
             }
 
             var todo = await _context.Todos.FindAsync(id);
+
             if (todo == null)
             {
                 return NotFound();
@@ -99,7 +102,7 @@ namespace MyTodoApp.Controllers
             if (todo.User != User.Identity.Name)
             {
                 return NotFound();
-            } 
+            }
             return View(todo);
         }
 
@@ -108,7 +111,7 @@ namespace MyTodoApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Done,CreatAt")] Todo todo)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Done")] Todo todo)
         {
             if (id != todo.Id)
             {
@@ -154,11 +157,11 @@ namespace MyTodoApp.Controllers
             {
                 return NotFound();
             }
-            
+
             if (todo.User != User.Identity.Name)
             {
                 return NotFound();
-            } 
+            }
 
             return View(todo);
         }
@@ -172,19 +175,20 @@ namespace MyTodoApp.Controllers
             {
                 return Problem("Entity set 'ApplicationDbContext.Todos'  is null.");
             }
+
             var todo = await _context.Todos.FindAsync(id);
             if (todo != null)
             {
                 _context.Todos.Remove(todo);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool TodoExists(int id)
         {
-          return (_context.Todos?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Todos?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

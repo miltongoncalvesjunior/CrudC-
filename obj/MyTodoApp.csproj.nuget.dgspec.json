@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mozart.gomes\\CrudC-\\MyTodoApp.csproj": {}
+    "C:\\Users\\milton.junior\\Dev\\CrudC-\\MyTodoApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mozart.gomes\\CrudC-\\MyTodoApp.csproj": {
+    "C:\\Users\\milton.junior\\Dev\\CrudC-\\MyTodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mozart.gomes\\CrudC-\\MyTodoApp.csproj",
+        "projectUniqueName": "C:\\Users\\milton.junior\\Dev\\CrudC-\\MyTodoApp.csproj",
         "projectName": "MyTodoApp",
-        "projectPath": "C:\\Users\\mozart.gomes\\CrudC-\\MyTodoApp.csproj",
-        "packagesPath": "C:\\Users\\mozart.gomes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mozart.gomes\\CrudC-\\obj\\",
+        "projectPath": "C:\\Users\\milton.junior\\Dev\\CrudC-\\MyTodoApp.csproj",
+        "packagesPath": "C:\\Users\\milton.junior\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\milton.junior\\Dev\\CrudC-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mozart.gomes\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\milton.junior\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
